@@ -13,8 +13,10 @@ A webpack sandbox
 
 "scripts": {
     "prebuild": "del-cli dist -f",
-	"build": "webpack src/main.js dist/bundle.js",
+    "build": "webpack src/main.js dist/bundle.js",
     "execute": "node dist/bundle.js",
     "start": "npm run build -s && npm run execute -s"
   }
+ 
+ 6)  Run npm start.  
 
