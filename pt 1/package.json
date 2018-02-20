@@ -1,0 +1,29 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "a webpack sandbox",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "del-cli dist -f",
+    "build": "webpack src/main.js dist/bundle.js",
+    "execute": "node dist/bundle.js",
+    "start": "npm run build -s && npm run execute -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayna-j/webpack-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dayna-j/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/dayna-j/webpack-demo#readme",
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
+}
