@@ -1,7 +1,8 @@
-// This library allows us to combine paths easily
+// The 'path' library allows us to combine paths easily
 
 // modules are to node as libraries are to javascript
-// require('module) includes the module for use.
+
+// require('module) includes the module for use.  the path module is REQUIRED.
 const path = require('path');
 
 

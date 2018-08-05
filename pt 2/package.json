@@ -1,9 +1,16 @@
+
+//  A package.json file:  
+
+//  Lists the packages that the project depends on.
+//  Allows you to specify the package versions that your project depends on.
+//  Makes your build reproducible and easier to share with other developers.
+
 {
   "name": "pt-2",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "devDependencies": {
+  "devDependencies": { // devDependencies are needed during the production / development process.  npm install <package> --save-dev
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
@@ -19,7 +26,7 @@
     "build": "webpack -p",
     "dev": "webpack-dev-server --hot --inline"
   },
-  "dependencies": {
+  "dependencies": { // dependencies are necessary for the project to run.  npm install <package> --save
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
